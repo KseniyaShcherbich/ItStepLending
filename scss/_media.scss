@@ -1,0 +1,310 @@
+@media all and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .footer {
+    display: inline;
+  }
+  .header {
+    padding-top: 0px;
+    &__logo {
+      img {
+        width: 42px;
+      }
+    }
+    &__list {
+      ul {
+        margin: 0px;
+        padding: 0px;
+
+        &.mobile {
+          padding: 0px;
+        }
+        li {
+          display: inline-block;
+          margin: 0px;
+        }
+      }
+    }
+    .menu {
+      margin-bottom: 10px;
+    }
+    .nav_list {
+      display: none;
+    }
+    &__text {
+      margin: 0px 0px 0px 10px;
+      p {
+        font-size: 11px;
+        line-height: 14px;
+      }
+      .bold {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+    .main_info {
+      margin-top: 37px;
+      background: url(../images/interview_mobile.svg) no-repeat bottom right;
+      background-size: contain;
+      .main_info_career_center {
+        @include font(64px, 800, #282828);
+        font-family: gilroy;
+        line-height: 56px;
+        margin-bottom: 16px;
+      }
+      p {
+        @include font(16px, 400, #282828);
+        font-family: gilroy;
+        line-height: 18px;
+      }
+      &__text {
+        margin-bottom: 20px;
+      }
+      &__list {
+        ul {
+          margin-bottom: 133px;
+          li {
+            a {
+              @include font(13px, 500, #fff);
+            }
+          }
+        }
+      }
+    }
+  }
+  .events {
+    &__bg_grey {
+      background: linear-gradient(113deg, #f1f1f1 0%, #ffffff 100%);
+    }
+    &__bg-img {
+      background: url(../images/red_figure_media.svg) no-repeat top right;
+      background-size: contain;
+    }
+    .events_title {
+      @include font(36px, 700, #282828);
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .java_block {
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+      }
+    }
+    .talks_band_block {
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .qa_block {
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .events_link {
+      margin: 0px 0px 86px 0px;
+      display: flex;
+      justify-content: center;
+    }
+    &__block {
+      width: 96%;
+      left: 3%;
+    }
+  }
+  .projects {
+    .projects_title {
+      display: flex;
+      justify-content: center;
+      margin: 112px 0px 36px 0px;
+      @include font(36px, 700, #282828);
+      line-height: 40px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    &__media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gumanoid_info {
+      margin: 10px 0px 30px 0px;
+      .man {
+        margin-bottom: 8px;
+      }
+      .lorem_ipsum {
+        line-height: 20px;
+      }
+    }
+    .human {
+      margin-top: 10px;
+    }
+    .coding {
+      margin: 8px 0px 8px 0px;
+    }
+    .ivanka_content {
+      margin-bottom: 30px;
+    }
+    .projects_center_link {
+      margin: 30px 0px 155px 0px;
+    }
+  }
+  .stories {
+    .human {
+      margin-left: 10px;
+    }
+    .stories_title {
+      @include font(36px, 700, #282828);
+      line-height: 40px;
+      text-align: center;
+    }
+    .video_block {
+      width: 100%;
+      min-height: 330px;
+
+      .watch {
+        a {
+          margin: 15px 0px 17px 0px;
+        }
+      }
+      .img_story {
+        padding-top: 7px;
+        img {
+          width: 100%;
+        }
+      }
+      &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 10px;
+        .human_media {
+          margin: 9px 0px 9px 10px;
+        }
+        .watch {
+          @include flex(center, normal);
+          width: 100%;
+        }
+      }
+      .grey_block {
+        width: 336px;
+        min-height: 380px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        p {
+          @include font(15px, 400, #282828);
+          line-height: 22px;
+          padding: 15px 10px 15px 14px;
+        }
+        .bold {
+          @include font(18px, 500, #282828);
+          margin: 15px 17px 0px 15px;
+        }
+      }
+    }
+    .video_block_margin {
+      margin: 30px 0px 32px 0px;
+      padding: 6px 7px 0px 7px;
+    }
+    .stories_center_link {
+      margin-bottom: 0px;
+    }
+  }
+  .vacancy {
+    .vacancy_block {
+      margin-bottom: 10px;
+    }
+    .vacancy_title {
+      margin: 126px 0px 30px 0px;
+      @include font(36px, 700, #282828);
+      text-align: center;
+    }
+    .vacancy_center_link {
+      margin: 20px 0px 227px 0px;
+    }
+  }
+  .feedback {
+    background: linear-gradient(89deg, #f1f1f1 0%, #ffffff 100%);
+    padding-top: 40px;
+    .feedback_info {
+      padding: 0px 20px;
+      @include flex(center, center);
+      width: 100%;
+      margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 90px;
+      }
+      &__item {
+        @include font(24px, 700, #282828);
+        line-height: 31px;
+        margin-bottom: 10px;
+      }
+      &__description {
+        p {
+          line-height: 21px;
+          margin: 0px;
+        }
+      }
+      &__butn {
+        a {
+          @include font(18px, 600, #fff);
+          &:hover {
+            box-shadow: 0px 4px 30px #c10000;
+          }
+        }
+      }
+      .yellow_btn {
+        margin-top: 20px;
+        a {
+          &:hover {
+            box-shadow: 0px 4px 30px #b5ab86;
+          }
+        }
+      }
+    }
+    &__padding {
+      padding-left: 78px;
+    }
+  }
+  .partners {
+    padding-bottom: 0px;
+    .partners_title {
+      margin: 149px 0px 50px 0px;
+      @include font(36px, bold, #282828);
+      @include flex(center, center);
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin-bottom: 30px;
+      }
+      &_center {
+        opacity: 0.4;
+        margin-bottom: 0px;
+      }
+      &_last {
+        display: none;
+      }
+      .media_watch {
+        margin-bottom: 81px;
+        a {
+          @include font(16px, 500, #aaa);
+          &:hover {
+            @include font(16px, 500, #aaa);
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background: #282828;
+  }
+}

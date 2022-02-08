@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--   ИЗ ЭТ СЕКЦИИ ДАННЫЕ НЕ ОТОБРАЖ-СЯ И ИСП-СЯ ДЛЯ ПОДКЛЮЧ JS CSS И СИСТ НАСТРОЕК   -->
+    <title>mainpage</title>
+
+    <!-- charset это атрибут
+        utf-8 это значение
+        атрибуты исп-ют для того, чтобы изм-ть отображение (интерпритацию тега(настроить его))-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row menu">
+          <div class="col-lg-3 col-9 header_logo_flex">
+            <div class="header__logo">
+              <a href="#"><img src="images/header_logo.svg" /></a>
+            </div>
+            <div class="header__text">
+              <p class="bold">Центр карьеры</p>
+              <p>Компьютерной академии ШАГ</p>
+            </div>
+          </div>
+          <div class="col-lg-9 col-3 nav-text_flex">
+            <div class="header__list">
+              <ul class="desktop">
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Истории</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li class="btn_consult"><a href="#">Консультация</a></li>
+              </ul>
+              <ul class="mobile">
+                <li><i class="phone"></i></li>
+                <li><i class="list"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__nav">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="nav__address">Минск ул.К Маркса 32</div>
+            </div>
+            <div class="col-lg-9">
+              <div class="nav_list">
+                <ul>
+                  <li>
+                    <span>Руководитель центра карьеры:</span>
+                    <a href="tel:+375297752194">+375(29)775-21-94</a>
+                  </li>
+                  <li>
+                    <span>Поступление в «ШАГ»:</span>
+                    <a href="tel:+375296366585">+375(29)636-65-85</a>
+                    <a href="tel:+375256920671">+375(25)692-06-71</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main_info">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="main_info__text">
+                <p class="main_info_career_center">Центр карьеры</p>
+                <p>Центр трудоустройства наших студентов</p>
+              </div>
+              <div class="main_info__list">
+                <ul>
+                  <li><a href="#">Выстраиваем траектории ИТ-карьеры</a></li>
+                  <li><a href="#">ИТ-мероприятия</a></li>
+                  <li><a href="#">Вакансии и стажировки</a></li>
+                  <li><a href="#">Консультируем по выбору профессии</a></li>
+                  <li><a href="#">Помогаем найти работу в ИТ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="events">
+      <div class="events__bg_grey">
+        <div class="events__bg-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title events_title">Мероприятия</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="java_block"><img src="images/card_java.svg" />
+              <div class="events__block">
+                  <div class="block_header">
+                    <div class="block_header__date">22.12.2019 19:00</div>
+                    <div class="block_header__info">открытый урок</div>
+                  </div>
+                  <div><a href="#">Программирование на JAVA</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="talks_band_block">
+              <div class="events__block">
+               
+                  <div class="block_header">
+                    <div class="block_header__date">22.12.2019 19:00</div>
+                    <div class="block_header__info">мероприятие</div>
+                  </div>
+                  <div >
+                    <a href="#">Компания IBA Group приглашает вас на IT Talks Band</a>
+                  </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="qa_block">
+              <div class="events__block">
+               
+                  <div class="block_header">
+                    <div class="block_header__date">22.12.2019 19:00</div>
+                    <div class="block_header__info">открытый урок</div>
+                  </div>
+                  <div>
+                    <a href="#">Тестирование программного обеспесения QA для чайников</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="arrow_link events_link">
+              <div><a href="#">Смотреть все мероприятия<span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title projects_title">Проекты студентов</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 projects__media">
+            <img src="images/gumanoid.svg" />
+          </div>
+          <div class="col-lg-4">
+            <div class="gumanoid_info">
+              <div class="man">
+                <div class="postulako"><span class="postulako"></span></div>
+                <div class="man__info">
+                  <div class="name">Арсений Постулако</div>
+                  <div class="activity">Компьютерная графика и дизайн</div>
+                </div>
+              </div>
+              <div class="animation">
+                Анимация, 3D, Маппинг, Текстурирование
+              </div>
+              <div class="lighting">
+                Волосатый гуманоид в статическом освещении
+              </div>
+              <div class="lorem_ipsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                senectus sed ornare cursus imperdiet.<br />
+                <br />
+                Odio dignissim pellentesque tellus habitant curabitur quis arcu
+                morbi vel. Commodo urna, varius magna ac aenean.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/key.svg" /><a href="#"><span class="vector"></span ></a>
+          </div>
+          <div class="col-lg-3">
+            <div class="human">
+              <div class="ivanka"><span class="ivanka"></span></div>
+              <div class="human_info">
+                <div class="human_info__name">Иванка Корнеева</div>
+                <div class="human_info__activity">Java-разработка</div>
+              </div>
+            </div>
+            <div class="coding">Кодинг, Java</div>
+            <div class="ivanka_content">
+              Создание ветви комментариев для образовательного ресурса
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/fire.svg" /><a href="#"
+              ><span class="vector vector_fire"></span
+            ></a>
+          </div>
+          <div class="col-lg-3">
+            <div class="human">
+              <div class="mursakov"><span class="mursakov"></span></div>
+              <div class="human_info">
+                <div class="human_info__name">Арсений Мурсаков</div>
+                <div class="human_info__activity">
+                  Компьютерная графика и дизайн
+                </div>
+              </div>
+            </div>
+            <div class="coding">Моушн, Анимация</div>
+            <div class="ivanka_content">
+              Анимация костра в темноте и несущийся метеоритный дождь
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="arrow_link projects_center_link">
+              <a href="#">Смотреть все проекты<span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stories">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title stories_title">Истории выпускников</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="video_block">
+              <div class="img_story">
+                <img src="images/story.svg" /><a href="#"
+                  ><span class="vector"></span
+                ></a>
+              </div>
+              <div class="video_block__flex">
+                <div class="human human_media">
+                  <div class="evgeniy"><span class="evgeniy"></span></div>
+                  <div class="human_info">
+                    <div class="human_info__name">Евгений Жилка</div>
+                    <div class="human_info__activity">
+                      Компьютерная графика и дизайн
+                    </div>
+                  </div>
+                </div>
+                <div class="watch"><a href="#">Смотреть</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="video_block video_block_margin">
+              <div class="grey_block">
+                <p class="bold">Моя работа позволяет выразить себя</p>
+                <p>
+                  Дизайнер — интересная и творческая профессия. Ведь все, что мы
+                  видим вокруг, создано по дизайнерской идее. Главная задача
+                  специалиста любого направления дизайна — создание удобных и
+                  красивых вещей, улучшающих качество жизни. Моя работа
+                  дизайнера позволяет мне выразить себя, я занимаюсь этим с
+                  удовольствием. Анастасия Постулат – выпускник Академии ШАГ по
+                  ...
+                </p>
+              </div>
+              <div class="video_block__flex">
+                <div class="human">
+                  <div class="evgeniy"><span class="evgeniy"></span></div>
+                  <div class="human_info">
+                    <div class="human_info__name">Евгений Жилка</div>
+                    <div class="human_info__activity">
+                      Компьютерная графика и дизайн
+                    </div>
+                  </div>
+                </div>
+                <div class="watch"><a href="#">Смотреть</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="arrow_link stories_center_link">
+              <a href="#">Смотреть все проекты<span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vacancy">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title vacancy_title">Вакансии</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Godel Technologies</a></div>
+                <div class="vacancy_flex__level">Стажер, $</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">Front-End Developer</a></div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Tribuit Mardes</div>
+                <div class="vacancy_flex__level middl">Миддл</div>
+              </div>
+              <div class="vacancy_block__description middl">
+                <a href="#">Дизайнер аниматор</a>
+              </div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Wargaming</div>
+                <div class="vacancy_flex__level">Джуниор</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">Дизайнер аниматор</a></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Godel Technologies</div>
+                <div class="vacancy_flex__level middl">Миддл</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">PHP Developer</a></div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Syberry</div>
+                <div class="vacancy_flex__level middl">Стажер</div>
+              </div>
+              <div class="vacancy_block__description">
+                <a href="#">PHP Developer / Сетевой программист</a>
+              </div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Godel Technologies</div>
+                <div class="vacancy_flex__level">Стажер, $</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">Front-End Developer</a></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Godel Technologies</div>
+                <div class="vacancy_flex__level middl">Стажер</div>
+              </div>
+              <div class="vacancy_block__description">
+                <a href="#">Web-разработчик Wordpress (Создание сайтов и интернет магазинов
+                )</a>
+              </div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">ООО «Медиатек»</div>
+                <div class="vacancy_flex__level">Джуниор</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">Python Developer</a></div>
+            </div>
+            <div class="vacancy_block">
+              <div class="vacancy_flex">
+                <div class="vacancy_flex__item">Playgendary</div>
+                <div class="vacancy_flex__level">Джуниор</div>
+              </div>
+              <div class="vacancy_block__description"><a href="#">UI/UX Designer</a>UI/UX Designer</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="arrow_link vacancy_center_link">
+              <a href="#">Смотреть все проекты <span class="arrow"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 feedback__border">
+            <div class="feedback_info">
+              <div class="feedback_info__item">
+                Отправь нам свое резюме и мы найдем тебе работу мечты
+              </div>
+              <div class="feedback_info__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum pretium vel arcu donec sem.
+                </p>
+                <p>
+                  Lectus at ut nulla sit id facilisi. Ipsum, dolor, amet sit
+                  posuere venenatis amet tristique diam.
+                </p>
+              </div>
+                <div class="feedback_info__butn"><a href="#">Заполнить резюме</a></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feedback_info feedback__padding">
+              <div class="feedback_info__item">
+                Возникли вопросы по трудоустройству?
+              </div>
+              <div class="feedback_info__description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Dictum pretium vel arcu donec sem.Lectus at ut nulla sit id
+                  facilisi. Ipsum, dolor, amet sit posuere venenatis amet
+                  tristique diam.Ipsum, dolor, amet sit posuere venenatis amet
+                  tristique diam.
+                </p>
+              </div>
+              <div class="feedback_info__butn yellow_btn"> <a href="#">Получить консультацию</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title partners_title">Наши партнеры</div>
+          </div>
+            <div class="partners__block">
+              <div><a href="#"><img src="images/mediatech.svg" /></a></div>
+              <div><a href="#"><img src="images/softclub.svg" /></a></div>
+              <div><a href="#"><img src="images/issoft.svg" /></a></div>
+              <div><a href="#"><img src="images/instinctools.svg" /></a></div>
+              <div><a href="#"><img src="images/itl.svg" /></a></div>
+            </div>
+            <div class="partners__block partners__block_center">
+              <div><a href="#"><img src="images/sistec.svg" /></a></div>
+              <div><a href="#"><img src="images/autodesk.svg" /></a></div>
+              <div><a href="#"><img src="images/artox.svg" /></a></div>
+              <div><a href="#"><img src="images/misoft.svg" /></a></div>
+              <div class="media_watch"><a href="#">Показать еще</a></div>
+            </div>
+            <div class="partners__block partners__block_last">
+              <div><a href="#"><img src="images/adani.svg" /></a></div>
+              <div><a href="#"><img src="images/apalon.svg" /></a></div>
+              <div><a href="#"><img src="images/playtika.svg" /></a></div>
+              <div><a href="#"><img src="images/syberry.svg" /></a></div>
+              <div><a href="#"><img src="images/godeltec.svg" /></a></div>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row footer__row">
+          <div class="col-lg-9">
+            <div class="footer__content">© 1999-2019 Компьютерная Академия ШАГ
+               - лидер в сфере профессионального компьютерного образования</div>
+               </div>
+          <div class="col-lg-3">
+            <div class="footer__social_nets">
+              <ul>
+                <li><a href="#"><span class="facebook"></span></a></li>
+                <li><a href="#"><span class="youtube"></span></a></li>
+                <li> <a href="#"><span class="vk"></span></a></li>
+                <li> <a href="#"><span class="telegram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

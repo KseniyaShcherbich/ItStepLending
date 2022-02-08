@@ -1,0 +1,559 @@
+@import "../fonts/stylesheet.scss";
+@import "_fonts.scss";
+@import "../fonts/gilroy.scss";
+
+@import "_icons.scss";
+@import "_mixins.scss";
+@import "_modules.scss";
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+.header {
+  background: linear-gradient(64.48deg, #f1f1f1 0%, #ffffff 100%);
+  padding-top: 26px;
+
+  .menu {
+    background: #ffffff;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    padding: 9px 0px 10px 0px;
+    margin-bottom: 17px;
+    .header_logo_flex {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+  }
+  &__text {
+    margin-left: 11px;
+    p {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #676767;
+      margin: 0px;
+    }
+    .bold {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      color: #e03b3b;
+    }
+  }
+  .nav-text_flex {
+    @include flex(flex-end, center);
+  }
+  &__list {
+    ul {
+      margin: 0px;
+      li {
+        display: inline;
+        text-decoration: none;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0px;
+        }
+        a {
+          font-family: "IBM Plex Sans";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 21px;
+          color: #282828;
+          text-decoration: none;
+        }
+      }
+      .btn_consult {
+        :hover {
+          box-shadow: 0px 4px 30px rgba(193, 0, 0, 0.16);
+        }
+        a {
+          @include font(16px, 600, #ffffff);
+          font-family: "IBM Plex Sans";
+          background: linear-gradient(86.45deg, #c84f4f -3.82%, #ec3939 106.47%),
+            linear-gradient(0deg, #282828, #282828), #c4c4c4;
+          padding: 10px 18px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  &__nav {
+    &__address {
+      @include font(14px, 500, #282828);
+      font-family: "IBM Plex Sans";
+    }
+    .nav_list {
+      ul {
+        margin: 0px;
+        text-align: right;
+        li {
+          display: inline;
+          text-align: right;
+          &:first-child {
+            margin-right: 14px;
+          }
+          span {
+            @include font(14px, normal, #888);
+            font-family: "IBM Plex Sans";
+          }
+          a {
+            @include font(13px, 600, #282828);
+            font-family: "IBM Plex Sans";
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .main_info {
+    margin-top: 73px;
+    background: url(../images/interview.svg) no-repeat top right;
+
+    &__text {
+      margin-bottom: 140px;
+      .main_info_career_center {
+        @include font(100px, 800, #c84f4f);
+        font-family: gilroy;
+        line-height: 86px;
+        margin-bottom: 30px;
+      }
+      p {
+        @include font(24px, 400, #282828);
+        font-family: gilroy;
+        margin: 0px;
+      }
+    }
+    &__list {
+      ul {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 83px;
+        li {
+          display: inline-block;
+          margin: 8px;
+          a {
+            background: #e03b3b;
+            border-radius: 100px;
+            padding: 5px 10px;
+            @include font(15px, 500, #fff);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.events {
+  &__bg-img {
+    background: url(../images/red_figure.svg) no-repeat top right;
+    background-size: contain;
+  }
+  &__bg_grey {
+    background: linear-gradient(116deg, #f1f1f1 0%, #ffffff 100%);
+  }
+  .events_title {
+    margin: 114px 0px 50px 0px;
+  }
+  .java_block {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  .talks_band_block {
+    background: url(../images/talks_band.svg);
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .qa_block {
+    background: url(../images/card_qa.svg);
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__block {
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 16px 12px 15px 16px;
+    background: #ffffff;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    position: absolute;
+    a {
+      @include font(15px, 500, #282828);
+      font-family: "IBM Plex Sans";
+      margin-top: 6px;
+      &:hover {
+        text-decoration: none;
+        @include font(15px, 500, #282828);
+      }
+    }
+    .block_header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+
+      &__date {
+        @include font(12px, 700, #e03b3b);
+        font-family: "IBM Plex Sans";
+      }
+      &__info {
+        @include font(10px, bold, #aaa);
+        font-family: "IBM Plex Sans";
+        text-transform: uppercase;
+      }
+    }
+  }
+  .events_link {
+    margin: 54px 0px 84px 0px;
+    a {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 14px;
+      }
+    }
+  }
+}
+.projects {
+  .projects_title {
+    margin: 198px 0px 50px 0px;
+  }
+  .gumanoid_info {
+    margin-bottom: 40px;
+    .man {
+      margin-bottom: 130px;
+      @include flex(start, center);
+      flex-wrap: nowrap;
+      &__info {
+        margin-left: 10px;
+        .name {
+          @include font(16px, 500, #282828);
+          font-family: IBM Plex Sans;
+        }
+        .activity {
+          @include font(14px, normal, #e03b3b);
+        }
+      }
+    }
+    .animation {
+      @include font(14px, normal, #aaaaaa);
+      font-family: "IBM Plex Sans";
+      margin-bottom: 6px;
+    }
+    .lighting {
+      @include font(24px, 700, #282828);
+      line-height: 30px;
+      font-family: "IBM Plex Sans";
+      margin-bottom: 10px;
+    }
+    .lorem_ipsum {
+      @include font(16px, 400, #282828);
+      line-height: 26px;
+      font-family: "IBM Plex Sans";
+    }
+  }
+
+  .coding {
+    @include font(13px, 400, #aaa);
+    font-family: "IBM Plex Sans";
+    margin-top: 34px;
+  }
+  .ivanka_content {
+    @include font(18px, 700, #282828);
+    font-family: "IBM Plex Sans";
+    line-height: 22px;
+  }
+  .vector_fire {
+    top: 35%;
+    left: 40%;
+  }
+  .projects_center_link {
+    justify-content: center;
+    margin: 64px 0px 171px 0px;
+    a {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 14px;
+      }
+    }
+  }
+  img {
+    a {
+      display: none;
+      .vector {
+        display: inline-block;
+        background-image: url(../images/vector.svg);
+        width: 49px;
+        height: 48px;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+      }
+    }
+    &:hover {
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.stories {
+  background: url(../images/grey_figure_right.svg) no-repeat top right;
+  .stories_bg {
+    background: #fff;
+  }
+  .video_block {
+    width: 100%;
+    min-height: 366px;
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    margin-top: 51px;
+    padding: 0px 7px;
+    .img_story {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      a {
+        display: none;
+        .vector {
+          display: inline-block;
+          background-image: url(../images/vector.svg);
+          width: 49px;
+          height: 48px;
+          position: absolute;
+          top: 45%;
+          left: 45%;
+        }
+      }
+      &:hover {
+        a {
+          display: inline-block;
+        }
+      }
+    }
+    .watch {
+      a {
+        text-decoration: none;
+        @include font(16px, 600, #aaa);
+      }
+    }
+    &__flex {
+      @include flex(space-around, center);
+      flex-wrap: nowrap;
+      margin-top: 10px;
+    }
+    .grey_block {
+      width: 100%;
+      height: 280px;
+      background: #f1f1f1;
+      border-radius: 16px;
+      display: inline-block;
+      margin: 10px 10px 0px 10px;
+      .bold {
+        width: 277px;
+        @include font(24px, bold, #282828);
+        padding: 0px;
+        margin: 24px 0px 0px 23px;
+      }
+      p {
+        padding: 10px 22px 26px 23px;
+        @include font(14px, 400, #282828);
+        font-family: "IBM Plex Sans";
+        align-items: center;
+      }
+    }
+  }
+  .video_block_margin {
+    margin: 121px 0px 102px;
+  }
+  .stories_center_link {
+    justify-content: center;
+    margin-bottom: 35px;
+    a {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
+.vacancy {
+  background: #fff;
+  .vacancy_title {
+    margin: 126px 0px 30px;
+  }
+  .vacancy_block {
+    padding: 12px 0px 20px 15px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    .vacancy_flex {
+      @include flex(space-between, center);
+      flex-wrap: nowrap;
+      &__item {
+        @include font(14px, normal, #aaa);
+      }
+      &__level {
+        padding: 3px 20px;
+        background: linear-gradient(86.45deg, #c84f4f -3.82%, #ec3939 106.47%),
+          linear-gradient(0deg, #282828, #282828), #c4c4c4;
+        border-radius: 2px;
+        color: #fff;
+      }
+      .middl {
+        padding: 3px 30px;
+      }
+    }
+    &__description {
+      a {
+        @include font(20px, 700, #282828);
+        text-decoration: none;
+      }
+    }
+  }
+  .vacancy_center_link {
+    margin: 46px 0px 160px 0px;
+    justify-content: center;
+    margin-left: 14px;
+    a {
+      display: flex;
+      align-items: center;
+    }
+    span {
+      margin-left: 14px;
+    }
+  }
+}
+
+.feedback {
+  &__border {
+    border-right: 4px solid #fff;
+  }
+  background: linear-gradient(64.48deg, #f1f1f1 0%, #ffffff 100%);
+  .feedback_info {
+    padding-top: 59px;
+    width: 475px;
+    margin-bottom: 68px;
+    border-right: #ec3939;
+    border-right-width: 10px;
+
+    &__item {
+      @include font(30px, bold, #282828);
+      line-height: 39px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      p {
+        @include font(16px, normal, #676767);
+        margin: 0px;
+        line-height: 21px;
+      }
+    }
+    &__butn {
+      background: linear-gradient(86.45deg, #c84f4f -3.82%, #ec3939 106.47%),
+        linear-gradient(0deg, #282828, #282828), #c4c4c4;
+      margin-top: 30px;
+      border-radius: 8px;
+      width: 248px;
+      padding: 10px 0px;
+      text-align: center;
+      box-shadow: 0px 4px 30px #c100008c;
+      a {
+        @include font(18px, 600, #fff);
+        text-decoration: none;
+      }
+    }
+    .yellow_btn {
+      border-radius: 8px;
+      background: linear-gradient(86.26deg, #bba556 0%, #dcd198 100%);
+      margin-top: 30px;
+      box-shadow: 0px 4px 30px #b5ab86;
+      a {
+        @include font(18px, 600, #fff);
+        text-decoration: none;
+      }
+    }
+  }
+  &__padding {
+    padding-left: 78px;
+  }
+}
+
+.partners {
+  background: #fff;
+  padding-bottom: 100px;
+  .partners_title {
+    margin: 160px 0px 84px 0px;
+  }
+  &__block {
+    @include flex(space-between, center);
+    margin-bottom: 60px;
+    width: 100%;
+    &_center {
+      @include flex(space-around, center);
+    }
+  }
+}
+
+.footer {
+  background: #282828;
+  padding: 19px 0px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    @include font(14px, 400, #ddd);
+    line-height: 18px;
+    font-family: "IBM Plex Sans";
+  }
+  &__social_nets {
+    ul {
+      margin: 0px;
+      li {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+@import "_media.scss";

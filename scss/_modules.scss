@@ -1,0 +1,46 @@
+.arrow_link {
+  display: flex;
+  align-items: center;
+  a {
+    @include font(16px, 600, #e03b3b);
+    margin-right: 14px;
+  }
+  a:hover {
+    color: #e03b3b;
+  }
+}
+
+.title {
+  @include font(56px, 700, #282828);
+}
+.human {
+  @include flex(start, center);
+  flex-wrap: nowrap;
+
+  .human_info {
+    margin-left: 8px;
+    &__name {
+      @include font(14px, 500, #282828);
+      font-family: IBM Plex Sans;
+    }
+    &__activity {
+      @include font(13px, normal, #e03b3b);
+      font-family: IBM Plex Sans;
+    }
+  }
+}
+
+a {
+  .vector {
+    display: none;
+    background-image: url(../images/vector.svg);
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  &:hover {
+    display: inline-block;
+  }
+}
